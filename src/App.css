@@ -1,22 +1,447 @@
+.btn-display {
+  float: right;
+  display: none;
+}
+
+.showVisibility:hover .btn-display{
+  display: block;
+}
+
+/* HEADER STYLINGS */
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav a{
+ color: #000 !important;
+ padding: 15px 10px;
+ font-weight: 600;
+} 
+
+.nav a:hover {
+  color: #ffc107 !important;
+  text-decoration: none;
+}
+
+#navbar {
+  padding: 0 3.125rem;
+}
+
+.searchInput {
+  width: 200px;
+  border: 2px solid #f5f5f5;
+  border-radius: 25px;
+  margin: auto;
+  outline: none;
+  padding: 3px;
+  text-indent: 25px;
+  margin-left: -24px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.searchInput:focus {
+  cursor: text;
+}
+
+.searchInput::placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+
+.home-image {
+  height: 300px;
+  min-width: 400px;
+  background: url('./images/PhotoGrid_1503052805965.jpg') center/cover no-repeat;
+  float: right;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 2;
+  padding-right: 0;
+}
+
+/* LOADING STYLING */
+.loading-center {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HOME PAGE STYLINGS */
+.main {
+  position: relative;
+  min-width: calc(100vw - 6.25rem);
+  min-height: calc(100vh - 6.25rem);
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.circle-top-right {
+  position: absolute;
+  top: -100px;
+  right: -15px;
+  width: 12.5rem; 
+  height: 12.5rem; 
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom right,#30d3ef,#75efba);
+}
+
+.circle-bottom-left {
+  position: absolute;
+  bottom: 53px;
+  left: -54px;
+  width: 12.5rem; 
+  height: 12.5rem; 
+  border-radius: 50%;
+  background: #ffc107;
+}
+
+.text-content {
+  position: absolute;
+  bottom: 95px;
+  left: 55px;
+}
+
+.purple-cicle {
+  position: absolute;
+  left: 33%;
+  bottom: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c2a;
+  transition: transform 1s ease;
+}
+
+.lemon-circle {
+  position: absolute;
+  background: #ffc107;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  right: 10%;
+  top: 40%;
+}
+
+.site-name {
+  letter-spacing: 10px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #09d3ac;
+.beauty-skincare {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  font-size: 3em;
+}
+
+.D {
+  position: absolute;
+  font-size: 4em;
+  top: 43px;
+  left: 195px;
+  font-weight: 600
+}
+
+.O1 {
+  position: absolute;
+  font-size: 4em;
+  top: 24px;
+  left: 352px;
+  font-weight: 600 
+}
+
+.R {
+  position: absolute;
+  font-size: 4em;
+  top: 47px;
+  left: 515px;
+  font-weight: 600 
+}
+
+.O2 {
+  position: absolute;
+  font-size: 4em;
+  top: 19px;
+  left: 669px;
+  font-weight: 600 
+}
+
+.N {
+  position: absolute;
+  font-size: 4em;
+  top: 48px;
+  left: 837px;
+  font-weight: 600 
+}
+
+.Y {
+  position: absolute;
+  font-size: 4em;
+  top: 30px;
+  left: 995px;
+  font-weight: 600 
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+.section-title h2 {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.section-title div {
+  width: 5rem;
+  height: 5px;
+  margin: 0 auto;
+  background: #ffc107;
+}
+
+.testimonial-display {
+  border-right: 1px solid #808080;
+  padding: 0.6em;
+  margin-top: 1.5rem;
+}
+
+.testimonial-display:nth-child(3) {
+  border-right: none;
+}
+
+#email {
+  padding: 4px 
+}
+#email::placeholder {
+  color: #808080
+}
+
+#email:-webkit-input-placeholder {
+  /* Edge */
+  color: #808080
+}
+
+#email:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #808080
+}
+
+#back-btn {
+  font-size: 2.5rem !important
+}
+
+
+ul li {
+  list-style: none
+}
+
+ul {
+  padding-inline-start: 0 !important
+}
+
+
+/* CONTACT SYLINGS */
+
+.field {
+  color: #495057;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid #495057;
+  /* text-indent: 15px; */
+  outline: none;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+/* FOOTER STYLINGS */
+
+#sticty-footer {
+  flex-shrink: none;
+}
+
+.social {
+  position: absolute;
+  left: 90px;
+  bottom: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.circle-icon {
+  background: #ffc107;
+  padding: 5px 8px;
+  border-radius: 50%;
+  line-height: 60px;
+}
+
+.hr-design {
+  height: 30px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.2);
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+.hr-design:before {
+  display: block;
+  content: '';
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.2);
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 12px;
+}
+
+.social {
+  padding: 3px 7px;
+  border: 0.06em solid rgba(0,0,0,0.2);
+  border-radius: 50%;
+  color: #808080;
+}
+
+div a {
+  color: #808080;
+}
+
+div a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+div input {
+  border: none;
+  outline: none;
+  text-indent: 8px;
+  padding: 0.06em;
+}
+
+.btnStyle {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.btnStyle:hover {
+  border: 1px solid rgba(0,0,0,1);
+  background: #000;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 767px) {
+  .site-footer-details {
+    text-align: center;
+  }
+  .heading {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .beauty-skincare span {
+    font-size: 24px;
+    margin-top: -30px;
+  }
+  
+  .hide-on-mobile {
+    display: none
+  }
+
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    padding: 0.4rem 3.125rem;
+  } 
+
+  .site-name {
+    margin-top: -45px;
+  }
+
+  .beauty-skincare {
+    font-size: 1.5em;
+    margin-top: 187px;
+  }
+
+  .circle-bottom-left {
+    bottom: 22px;
+  }
+
+  .text-content {
+    bottom: 60px;
+  }
+
+  .home-image {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .D, .O1, .R, .O2, .N, .Y {
+    position: static;
+    font-size: 2em;
+    margin-top: 200px;
+  }
+  .dorony {
+    text-align: center;
+    margin-bottom: -185px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .beauty-skincare {
+    font-size: 2em;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .D, .O1, .R, .O2, .N, .Y {
+    font-size: 2.2em;
+    margin-top: 100px;
+  }
+  .beauty-skincare {
+    margin-top: 204px;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-display {
+    border-bottom: 1px solid #808080;
+    border-right: none;
+    padding: 0.6em;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-display:nth-child(3) {
+    border-bottom: none;
+  }
 }

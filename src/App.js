@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense, lazy} from 'react'
+import { Route, Switch } from "react-router-dom"
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Loading from  './components/Loading'
+
+const Home = lazy(() => import('./routes/Home'))
+const Product = lazy(() => import('./routes/Products'))
+const Contact = lazy(() => import('./routes/Contact'))
+const PageNotFound = lazy(() => import('./routes/PageNotFound'))
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <>
+      <Header />
+      <Suspense fallback={<Loading />}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/products" component={Product} />
+          <Route path="/contact" component={Contact} />
+          <Route path="*" component={PageNotFound} /> 
+        </Switch>
+      </Suspense>
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
