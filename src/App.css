@@ -252,7 +252,6 @@ ul {
   padding-inline-start: 0 !important
 }
 
-
 /* CONTACT SYLINGS */
 
 .field {
@@ -261,7 +260,6 @@ ul {
   border-left: none;
   border-top: none;
   border-bottom: 1px solid #495057;
-  /* text-indent: 15px; */
   outline: none;
   padding: 5px 0;
   margin-bottom: 20px;
@@ -369,7 +367,7 @@ div input {
     font-size: 24px;
     margin-top: -30px;
   }
-  
+
   .hide-on-mobile {
     display: none
   }
