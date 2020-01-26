@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import SEO from '../components/SEO'
 import Services from '../components/Services'
-import Showcase from '../components/Showcase'
 import Testimonial from '../components/Testimonial'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
