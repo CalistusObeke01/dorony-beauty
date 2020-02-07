@@ -3,8 +3,6 @@ import SEO from '../components/SEO'
 import '../App.css';
 import items from '../data'
 
-
-
 function Products () {
 
     const numberFormat = (value) => new Intl.NumberFormat('NGN', {
