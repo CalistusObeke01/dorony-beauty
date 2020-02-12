@@ -35,9 +35,9 @@ class Home extends React.Component {
               <span>A</span>
               <span>U</span>
               <span>T</span>
-              <span style={{paddingRight: '10px'}}>Y</span>
+              <span style={{paddingRight: '.4rem'}}>Y</span>
               <span>&</span>
-              <span style={{paddingLeft: '10px'}}>S</span>
+              <span style={{paddingLeft: '.4rem'}}>S</span>
               <span>K</span>
               <span>I</span>
               <span>N</span>

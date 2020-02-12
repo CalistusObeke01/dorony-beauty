@@ -38,7 +38,7 @@ class Testimonial extends Component {
                                         <p style={{marginTop: '40px', textAlign: 'center'}}><b>{testimony.name}</b></p>
                                         <p style={{textAlign: 'center'}}>{testimony.desc}</p>
                                         <img src={Img} alt={testimony.name} 
-                                        width="50px" height="50px" 
+                                        width="60px" height="60px" 
                                         style={{position: 'absolute', top: '-20px', left: '44%'}} 
                                         className="rounded-circle" />
                                     </div>
